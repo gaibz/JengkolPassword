@@ -14,7 +14,7 @@
         </NavLeft>
         <NavTitle sliding>My Card</NavTitle>
         <NavRight>
-            <Link iconIos="f7:search" searchbarEnable=".searchbar-card" />
+            <Link iconIos="f7:search" searchbarEnable=".searchbar-card"/>
             <Link iconIos="f7:ellipsis_vertical"/>
         </NavRight>
         <NavTitleLarge>My Card</NavTitleLarge>
@@ -102,9 +102,8 @@
         Searchbar.toggle();
     }
 
-
     function handleSearch(elm, query, prevQuery) {
-      console.log({query})
+        console.log({query})
     }
 
     onMount(() => {

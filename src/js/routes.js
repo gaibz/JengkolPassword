@@ -1,11 +1,9 @@
-
-import HomePage from '../pages/home.svelte';
+import MyCredentials from '../components/Page/MyCredentials.svelte';
 import AboutPage from '../pages/about.svelte';
 import FormPage from '../pages/form.svelte';
 import CatalogPage from '../pages/catalog.svelte';
 import ProductPage from '../pages/product.svelte';
 import SettingsPage from '../pages/settings.svelte';
-
 import DynamicRoutePage from '../pages/dynamic-route.svelte';
 import RequestAndLoad from '../pages/request-and-load.svelte';
 import NotFoundPage from '../pages/404.svelte';
@@ -13,7 +11,7 @@ import NotFoundPage from '../pages/404.svelte';
 var routes = [
   {
     path: '/',
-    component: HomePage,
+    component: MyCredentials,
   },
   {
     path: '/about/',
@@ -53,7 +51,7 @@ var routes = [
       app.preloader.show();
 
       // User ID from request
-      var userId = routeTo.params.userId;
+      // var userId = routeTo.params.userId;
 
       // Simulate Ajax Request
       setTimeout(function () {

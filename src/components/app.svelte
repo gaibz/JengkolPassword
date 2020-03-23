@@ -23,16 +23,16 @@
 
 
   <!-- Views/Tabs container -->
-  <Views tabs class="safe-areas" themeDark>
+  <Views tabs class="safe-areas" themeDark colorTheme="green">
     <!-- Tabbar for switching views-tabs -->
     <Toolbar tabbar labels bottom swipeable>
 
-      <Link tabLink="#view-home"
+      <Link tabLink="#view-mycard"
             tabLinkActive
             iconIos="f7:rectangle_stack_person_crop_fill"
             iconAurora="f7:rectangle_stack_person_crop_fill"
             iconMd="f7:rectangle_stack_person_crop_fill"
-            text="My Card" />
+            text="My Credentials" />
 
       <Link tabLink="#view-catalog"
             iconIos="f7:star_fill"
@@ -52,7 +52,7 @@
     </Toolbar>
 
     <!-- Your main view/tab, should have "view-main" class. It also has "tabActive" prop -->
-    <View id="view-home" main tab tabActive url="/" />
+    <View id="view-mycard" main tab tabActive url="/" />
 
     <!-- Catalog View -->
     <View id="view-catalog" name="catalog" tab url="/catalog/" />
