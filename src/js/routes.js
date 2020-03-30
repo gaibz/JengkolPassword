@@ -1,4 +1,5 @@
 import MyCredentials from '../components/Page/MyCredentials.svelte';
+import CredentialView from "../components/Page/CredentialsView.svelte";
 import AboutPage from '../pages/about.svelte';
 import FormPage from '../pages/form.svelte';
 import CatalogPage from '../pages/catalog.svelte';
@@ -12,6 +13,10 @@ var routes = [
   {
     path: '/',
     component: MyCredentials,
+  },
+  {
+    path:'/credential/:id',
+    component: CredentialView,
   },
   {
     path: '/about/',
